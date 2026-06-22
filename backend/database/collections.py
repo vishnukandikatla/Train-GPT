@@ -220,7 +220,8 @@ async def get_session_context(session_id: str) -> Dict[str, Any]:
         "pnr": current_trip["pnr"],
         "previous_search_results": doc.get("previous_search_results") or [],
         "dialog_state": doc.get("dialog_state") or "STATE_IDLE",
-        "current_trip": current_trip
+        "current_trip": current_trip,
+        "user_name": doc.get("user_name")
     }
 
 async def update_session_context(session_id: str, updates: Dict[str, Any]) -> Dict[str, Any]:
@@ -236,9 +237,12 @@ async def update_session_context(session_id: str, updates: Dict[str, Any]) -> Di
             
     # Synchronize updates to both top-level and current_trip
     for k, v in normalized_updates.items():
-        if k not in ["session_id", "_id", "current_trip"]:
+        if k in ["session_id", "_id", "current_trip"]:
+            continue
+        # Only apply non-None updates to avoid wiping existing values
+        if v is not None:
             current[k] = v
-            if k in current["current_trip"]:
+            if k in current.get("current_trip", {}):
                 current["current_trip"][k] = v
                 
     if "current_trip" in updates and isinstance(updates["current_trip"], dict):
@@ -250,7 +254,10 @@ async def update_session_context(session_id: str, updates: Dict[str, Any]) -> Di
     # Save back to MongoDB
     set_fields = {}
     for k, v in current.items():
-        if k not in ["session_id", "_id"]:
+        if k in ["session_id", "_id"]:
+            continue
+        # Do not persist None values back into the document
+        if v is not None:
             set_fields[k] = v
             
     await db.session_contexts.update_one(
@@ -260,8 +267,15 @@ async def update_session_context(session_id: str, updates: Dict[str, Any]) -> Di
     )
     return current
 
-async def update_context_from_tool(tool_name: str, inputs: Dict[str, Any], output: Dict[str, Any]):
-    session_id = current_session_id.get(None)
+async def update_context_from_tool(tool_name: str, inputs: Dict[str, Any], output: Dict[str, Any], session_id: Optional[str] = None):
+    """
+    Update session context based on a tool execution.
+
+    Prefer an explicit `session_id` argument (safe when callers pass it).
+    Fall back to the `current_session_id` ContextVar only when not provided.
+    """
+    if not session_id:
+        session_id = current_session_id.get(None)
     if not session_id:
         return
         
@@ -271,7 +285,11 @@ async def update_context_from_tool(tool_name: str, inputs: Dict[str, Any], outpu
             updates["source"] = output.get("source")
             updates["destination"] = output.get("destination")
             updates["date"] = output.get("date")
-            updates["previous_search_results"] = output.get("trains", [])
+            trains = output.get("trains", [])
+            updates["previous_search_results"] = trains
+            if trains:
+                updates["train_no"] = trains[0]["train_no"]
+                updates["train_name"] = trains[0]["train_name"]
     elif tool_name == "check_availability":
         if output.get("status") == "success":
             updates["train_no"] = output.get("train_no")

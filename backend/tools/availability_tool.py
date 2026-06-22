@@ -39,7 +39,12 @@ def check_availability(train_no: str, class_type: str, date: str) -> Dict[str, A
                 execution_time=f"{execution_time_ms}ms",
                 message=f"Checked availability for Train {train_no} {class_type} on {date}. {status_msg}"
             )
-            context_coro = collections.update_context_from_tool("check_availability", {"train_no": train_no, "class_type": class_type, "date": date}, res)
+            context_coro = collections.update_context_from_tool(
+                "check_availability",
+                {"train_no": train_no, "class_type": class_type, "date": date},
+                res,
+                session_id=collections.current_session_id.get(None)
+            )
             async def run_both():
                 await asyncio.gather(db_coro, broadcast_coro, context_coro, return_exceptions=True)
 

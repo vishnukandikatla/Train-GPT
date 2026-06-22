@@ -2242,6 +2242,52 @@
           "_id": "6a38d88fc4a686fa3499ca51"
         }
       ]
+    },
+    {
+      "user_id": "api_test_runner",
+      "pnr": "7740021900",
+      "train_no": "12727",
+      "train_name": "Godavari Express",
+      "source": "SC",
+      "destination": "VSKP",
+      "journey_date": "2026-06-25",
+      "class_type": "3A",
+      "status": "Cancelled",
+      "booking_time": "2026-06-22T11:50:49.967156+00:00",
+      "_id": "6a39219913ccb98d122b41fa",
+      "passengers": [
+        {
+          "booking_id": "6a39219913ccb98d122b41fa",
+          "name": "Alice Smith",
+          "age": 25,
+          "gender": "Female",
+          "seat_no": "B2/16",
+          "_id": "6a39219913ccb98d122b41fb"
+        }
+      ]
+    },
+    {
+      "user_id": "api_test_runner",
+      "pnr": "0771038103",
+      "train_no": "12727",
+      "train_name": "Godavari Express",
+      "source": "SC",
+      "destination": "VSKP",
+      "journey_date": "2026-06-25",
+      "class_type": "3A",
+      "status": "Cancelled",
+      "booking_time": "2026-06-22T13:38:34.397703+00:00",
+      "_id": "6a393ada25179858d26e6ad6",
+      "passengers": [
+        {
+          "booking_id": "6a393ada25179858d26e6ad6",
+          "name": "Alice Smith",
+          "age": 25,
+          "gender": "Female",
+          "seat_no": "B3/53",
+          "_id": "6a393ada25179858d26e6ad7"
+        }
+      ]
     }
   ],
   "passengers": [
@@ -3092,6 +3138,22 @@
       "gender": "Male",
       "seat_no": "S4/21",
       "_id": "6a38d88fc4a686fa3499ca51"
+    },
+    {
+      "booking_id": "6a39219913ccb98d122b41fa",
+      "name": "Alice Smith",
+      "age": 25,
+      "gender": "Female",
+      "seat_no": "B2/16",
+      "_id": "6a39219913ccb98d122b41fb"
+    },
+    {
+      "booking_id": "6a393ada25179858d26e6ad6",
+      "name": "Alice Smith",
+      "age": 25,
+      "gender": "Female",
+      "seat_no": "B3/53",
+      "_id": "6a393ada25179858d26e6ad7"
     }
   ],
   "agent_logs": [
@@ -7525,6 +7587,26 @@
           "role": "assistant",
           "content": "I couldn't find any direct trains from SC to SBC on 2026-06-21. Would you like to check nearby stations?",
           "timestamp": "2026-06-22T06:38:57.804863+00:00"
+        },
+        {
+          "role": "user",
+          "content": "Find trains from SC to SBC on 2026-06-21",
+          "timestamp": "2026-06-22T11:50:52.945910+00:00"
+        },
+        {
+          "role": "assistant",
+          "content": "I couldn't find any direct trains from SC to SBC on 2026-06-21. Would you like to check nearby stations?",
+          "timestamp": "2026-06-22T11:50:56.426146+00:00"
+        },
+        {
+          "role": "user",
+          "content": "Find trains from SC to SBC on 2026-06-21",
+          "timestamp": "2026-06-22T13:38:38.095926+00:00"
+        },
+        {
+          "role": "assistant",
+          "content": "I'm having trouble reaching the AI service right now, but I can still help using available railway data.\n\nI couldn't find any direct trains from SC to SBC on 2026-06-21. Would you like to check nearby stations?",
+          "timestamp": "2026-06-22T13:38:42.360396+00:00"
         }
       ],
       "created_at": "2026-06-21T12:24:47.040256",
@@ -9395,6 +9477,36 @@
           "role": "assistant",
           "content": "Booking successful! Your booking has been confirmed (Mock Data) \ud83c\udfab!\n\ud83d\ude86 Train: Telangana Express (12724)\n\ud83d\udcc5 Date: 2026-06-24 | Class: SL\n\ud83d\udc49 PNR: 4217636604\n\ud83d\udc65 Passenger Seats:\n- Guest Passenger (30M) -> Seat S4/21\n\nWish you a safe and pleasant journey! \ud83d\ude86\ud83d\udc4b",
           "timestamp": "2026-06-22T06:39:11.806974+00:00"
+        },
+        {
+          "role": "user",
+          "content": "Peddapalli to hyd in 24 06",
+          "timestamp": "2026-06-22T11:50:56.443952+00:00"
+        },
+        {
+          "role": "assistant",
+          "content": "I'm here to help with your train journey. You can ask me to search for trains, check seat availability, compute fares, book tickets, or track your PNR status! \ud83d\ude86",
+          "timestamp": "2026-06-22T11:50:56.579768+00:00"
+        },
+        {
+          "role": "user",
+          "content": "Peddapalli to hyd in 24 06",
+          "timestamp": "2026-06-22T13:38:42.402160+00:00"
+        },
+        {
+          "role": "assistant",
+          "content": "I'm having trouble reaching the AI service right now, but I can still help using available railway data.\n\nI found the following trains from Peddapalli Junction to Secunderabad Junction on 2026-06-24 (Mock Data) \ud83d\ude86:\n1. Telangana Express (12724) - Departs 16:00, Arrives 20:00 (4h 00m)\n\nChecking trains for 24 June. Would you like Sleeper, 3A, or 2A?",
+          "timestamp": "2026-06-22T13:38:45.640493+00:00"
+        },
+        {
+          "role": "user",
+          "content": "check availability",
+          "timestamp": "2026-06-22T13:38:45.671762+00:00"
+        },
+        {
+          "role": "assistant",
+          "content": "I'm having trouble reaching the AI service right now, but I can still help using available railway data.\n\nFor train 12724, 21 seats available. Would you like me to book?",
+          "timestamp": "2026-06-22T13:38:48.845702+00:00"
         }
       ],
       "created_at": "2026-06-21T19:17:11.418391+00:00",
@@ -9852,16 +9964,7 @@
       "date": "2026-06-24",
       "train_no": "12724",
       "class_type": "SL",
-      "passengers": [
-        {
-          "booking_id": "6a38d595b915397f2bbf9257",
-          "name": "Guest Passenger",
-          "age": 30,
-          "gender": "Male",
-          "seat_no": "S1/19",
-          "_id": "6a38d595b915397f2bbf9258"
-        }
-      ],
+      "passengers": [],
       "previous_search_results": [
         {
           "train_no": "12724",
@@ -9898,25 +10001,16 @@
       "_id": "6a3838b7bcfcae141a6a4adc",
       "journey_date": "2026-06-24",
       "pnr": "7162168441",
-      "train_name": null,
-      "dialog_state": "STATE_BOOKED",
+      "train_name": "Telangana Express",
+      "dialog_state": "STATE_CONFIRMING_BOOKING",
       "current_trip": {
         "source": "PDPL",
         "destination": "SC",
         "date": "2026-06-24",
         "train_no": "12724",
-        "train_name": null,
+        "train_name": "Telangana Express",
         "class_type": "SL",
-        "passengers": [
-          {
-            "booking_id": "6a38d595b915397f2bbf9257",
-            "name": "Guest Passenger",
-            "age": 30,
-            "gender": "Male",
-            "seat_no": "S1/19",
-            "_id": "6a38d595b915397f2bbf9258"
-          }
-        ],
+        "passengers": [],
         "pnr": "7162168441"
       }
     },
@@ -10036,5 +10130,7 @@
       "journey_date": "2026-06-24",
       "pnr": "9743936600"
     }
-  ]
+  ],
+  "users": [],
+  "reset_tokens": []
 }

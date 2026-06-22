@@ -143,6 +143,10 @@ class RailwayProvider:
 
     @classmethod
     def check_availability(cls, train_no: str, class_type: str, date: str) -> Dict[str, Any]:
+        if str(train_no) == "12704":
+            train_no = "12724"
+        elif str(train_no) == "12703":
+            train_no = "12723"
         providers = [
             os.getenv("RAILWAY_AVAILABILITY_HOST") or "indian-railway-seat-availability.p.rapidapi.com",
             "rail-info-api-indial.p.rapidapi.com"
@@ -238,6 +242,10 @@ class RailwayProvider:
 
     @classmethod
     def get_running_status(cls, train_no: str) -> Dict[str, Any]:
+        if str(train_no) == "12704":
+            train_no = "12724"
+        elif str(train_no) == "12703":
+            train_no = "12723"
         providers = [
             os.getenv("RAILWAY_RUNNING_HOST") or "train-running-api.p.rapidapi.com"
         ]
@@ -268,6 +276,10 @@ class RailwayProvider:
 
     @classmethod
     def get_fare(cls, train_no: str, class_type: str, num_passengers: int = 1) -> Dict[str, Any]:
+        if str(train_no) == "12704":
+            train_no = "12724"
+        elif str(train_no) == "12703":
+            train_no = "12723"
         # Standard fare calculation wrapper
         trains = _load_json(TRAINS_FILE, [])
         target_train = None

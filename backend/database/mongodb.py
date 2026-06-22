@@ -3,13 +3,9 @@ import json
 import logging
 import asyncio
 from typing import Any, Dict, List, Optional
-from dotenv import load_dotenv
-
-# Load environment variables
-load_dotenv()
+# Note: load_dotenv() is called once in main.py — not repeated here
 
 logger = logging.getLogger("traingpt.database")
-logging.basicConfig(level=logging.INFO)
 
 MONGODB_URI = os.getenv("MONGODB_URI", "mongodb://localhost:27017/traingpt")
 

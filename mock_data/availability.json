@@ -11,7 +11,7 @@
       },
       "3A": {
         "available": 0,
-        "status": "WL-45"
+        "status": "WL-47"
       },
       "SL": {
         "available": 20,
@@ -162,7 +162,7 @@
         "status": "AVAILABLE"
       },
       "SL": {
-        "available": 27,
+        "available": 5,
         "status": "AVAILABLE"
       }
     }

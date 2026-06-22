@@ -36,7 +36,12 @@ async def cancel_ticket(pnr: str) -> Dict[str, Any]:
                 execution_time=f"{execution_time_ms}ms",
                 message=f"Cancelled booking for PNR {pnr}. {status_msg}"
             )
-            await collections.update_context_from_tool("cancel_ticket", {"pnr": pnr}, res)
+            await collections.update_context_from_tool(
+                "cancel_ticket",
+                {"pnr": pnr},
+                res,
+                session_id=collections.current_session_id.get(None)
+            )
         except Exception:
             pass
 

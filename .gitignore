@@ -1,8 +1,14 @@
 node_modules/
 .env
+.env.local
+.env.production
 .venv/
 __pycache__/
 .pytest_cache/
 .vscode/
 *.webp
 *.pyc
+*.pyo
+dist/
+build/
+*.egg-info/

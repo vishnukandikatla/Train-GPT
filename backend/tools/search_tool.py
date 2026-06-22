@@ -46,7 +46,12 @@ def search_train(source: str, destination: str, date: str) -> Dict[str, Any]:
                 "date": date,
                 "trains": results
             }
-            context_coro = collections.update_context_from_tool("search_train", {"source": source, "destination": destination, "date": date}, ret_val)
+            context_coro = collections.update_context_from_tool(
+                "search_train",
+                {"source": source, "destination": destination, "date": date},
+                ret_val,
+                session_id=collections.current_session_id.get(None)
+            )
             async def run_both():
                 await asyncio.gather(db_coro, broadcast_coro, context_coro, return_exceptions=True)
 

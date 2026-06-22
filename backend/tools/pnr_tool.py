@@ -36,7 +36,12 @@ async def check_pnr(pnr: str) -> Dict[str, Any]:
                 execution_time=f"{execution_time_ms}ms",
                 message=f"Checked PNR {pnr}. {status_msg}"
             )
-            await collections.update_context_from_tool("check_pnr", {"pnr": pnr}, res)
+            await collections.update_context_from_tool(
+                "check_pnr",
+                {"pnr": pnr},
+                res,
+                session_id=collections.current_session_id.get(None)
+            )
         except Exception:
             pass
 

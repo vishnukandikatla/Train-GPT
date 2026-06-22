@@ -46,7 +46,12 @@ async def book_ticket(
                 execution_time=f"{execution_time_ms}ms",
                 message=f"Booked ticket on Train {train_no} {class_type} for {len(passengers)} pax. {status_msg}"
             )
-            await collections.update_context_from_tool("book_ticket", {"train_no": train_no, "journey_date": journey_date, "class_type": class_type, "passengers": passengers, "user_id": user_id}, res)
+            await collections.update_context_from_tool(
+                "book_ticket",
+                {"train_no": train_no, "journey_date": journey_date, "class_type": class_type, "passengers": passengers, "user_id": user_id},
+                res,
+                session_id=collections.current_session_id.get(None)
+            )
         except Exception:
             pass
 
