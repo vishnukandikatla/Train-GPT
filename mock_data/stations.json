@@ -1,0 +1,13 @@
+[
+  {"code": "SBC", "name": "KSR Bengaluru City Junction"},
+  {"code": "NDLS", "name": "New Delhi Railway Station"},
+  {"code": "SC", "name": "Secunderabad Junction"},
+  {"code": "MAS", "name": "MGR Chennai Central"},
+  {"code": "CSMT", "name": "Chhatrapati Shivaji Maharaj Terminus (Mumbai)"},
+  {"code": "VSKP", "name": "Visakhapatnam Junction"},
+  {"code": "NZM", "name": "Hazrat Nizamuddin"},
+  {"code": "PDPL", "name": "Peddapalli Junction"},
+  {"code": "BZA", "name": "Vijayawada Junction"},
+  {"code": "HYB", "name": "Hyderabad Deccan"},
+  {"code": "RGD", "name": "Ramagundam"}
+]

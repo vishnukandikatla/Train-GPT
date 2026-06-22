@@ -1,0 +1,188 @@
+[
+  {
+    "train_no": "12627",
+    "train_name": "Karnataka Express",
+    "source": "SBC",
+    "destination": "NDLS",
+    "departure_time": "19:20",
+    "arrival_time": "13:40",
+    "travel_time": "38h 20m",
+    "classes": ["1A", "2A", "3A", "SL"],
+    "base_fares": {
+      "1A": 4800,
+      "2A": 2900,
+      "3A": 2000,
+      "SL": 750
+    },
+    "runs_on": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+  },
+  {
+    "train_no": "12628",
+    "train_name": "Karnataka Express",
+    "source": "NDLS",
+    "destination": "SBC",
+    "departure_time": "21:15",
+    "arrival_time": "12:00",
+    "travel_time": "38h 45m",
+    "classes": ["1A", "2A", "3A", "SL"],
+    "base_fares": {
+      "1A": 4800,
+      "2A": 2900,
+      "3A": 2000,
+      "SL": 750
+    },
+    "runs_on": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+  },
+  {
+    "train_no": "12727",
+    "train_name": "Godavari Express",
+    "source": "SC",
+    "destination": "VSKP",
+    "departure_time": "17:15",
+    "arrival_time": "05:45",
+    "travel_time": "12h 30m",
+    "classes": ["1A", "2A", "3A", "SL"],
+    "base_fares": {
+      "1A": 2400,
+      "2A": 1500,
+      "3A": 1100,
+      "SL": 400
+    },
+    "runs_on": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+  },
+  {
+    "train_no": "12728",
+    "train_name": "Godavari Express",
+    "source": "VSKP",
+    "destination": "SC",
+    "departure_time": "17:20",
+    "arrival_time": "06:15",
+    "travel_time": "12h 55m",
+    "classes": ["1A", "2A", "3A", "SL"],
+    "base_fares": {
+      "1A": 2400,
+      "2A": 1500,
+      "3A": 1100,
+      "SL": 400
+    },
+    "runs_on": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+  },
+  {
+    "train_no": "22691",
+    "train_name": "Rajdhani Express",
+    "source": "SBC",
+    "destination": "NZM",
+    "departure_time": "20:00",
+    "arrival_time": "05:55",
+    "travel_time": "33h 55m",
+    "classes": ["1A", "2A", "3A"],
+    "base_fares": {
+      "1A": 5500,
+      "2A": 3400,
+      "3A": 2400
+    },
+    "runs_on": ["Mon", "Wed", "Thu", "Sat"]
+  },
+  {
+    "train_no": "12213",
+    "train_name": "Duronto Express",
+    "source": "SBC",
+    "destination": "NZM",
+    "departure_time": "23:40",
+    "arrival_time": "07:00",
+    "travel_time": "31h 20m",
+    "classes": ["1A", "2A", "3A", "SL"],
+    "base_fares": {
+      "1A": 5100,
+      "2A": 3100,
+      "3A": 2150,
+      "SL": 800
+    },
+    "runs_on": ["Sat"]
+  },
+  {
+    "train_no": "12724",
+    "train_name": "Telangana Express",
+    "source": "PDPL",
+    "destination": "SC",
+    "departure_time": "16:00",
+    "arrival_time": "20:00",
+    "travel_time": "4h 00m",
+    "classes": ["1A", "2A", "3A", "SL"],
+    "base_fares": {
+      "1A": 1400,
+      "2A": 900,
+      "3A": 650,
+      "SL": 250
+    },
+    "runs_on": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+  },
+  {
+    "train_no": "12723",
+    "train_name": "Telangana Express",
+    "source": "SC",
+    "destination": "PDPL",
+    "departure_time": "06:00",
+    "arrival_time": "10:00",
+    "travel_time": "4h 00m",
+    "classes": ["1A", "2A", "3A", "SL"],
+    "base_fares": {
+      "1A": 1400,
+      "2A": 900,
+      "3A": 650,
+      "SL": 250
+    },
+    "runs_on": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+  },
+  {
+    "train_no": "12760",
+    "train_name": "Charminar Express",
+    "source": "SC",
+    "destination": "BZA",
+    "departure_time": "18:00",
+    "arrival_time": "00:30",
+    "travel_time": "6h 30m",
+    "classes": ["1A", "2A", "3A", "SL"],
+    "base_fares": {
+      "1A": 1800,
+      "2A": 1100,
+      "3A": 800,
+      "SL": 300
+    },
+    "runs_on": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+  },
+  {
+    "train_no": "12711",
+    "train_name": "Pinakini Express",
+    "source": "BZA",
+    "destination": "MAS",
+    "departure_time": "06:00",
+    "arrival_time": "13:00",
+    "travel_time": "7h 00m",
+    "classes": ["1A", "2A", "3A", "SL"],
+    "base_fares": {
+      "1A": 2000,
+      "2A": 1200,
+      "3A": 900,
+      "SL": 350
+    },
+    "runs_on": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+  },
+  {
+    "train_no": "12786",
+    "train_name": "Kachiguda Express",
+    "source": "SBC",
+    "destination": "SC",
+    "departure_time": "18:30",
+    "arrival_time": "05:40",
+    "travel_time": "11h 10m",
+    "classes": ["1A", "2A", "3A", "SL"],
+    "base_fares": {
+      "1A": 2200,
+      "2A": 1400,
+      "3A": 1000,
+      "SL": 450
+    },
+    "runs_on": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+  }
+]

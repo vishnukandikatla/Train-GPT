@@ -1,0 +1,170 @@
+{
+  "2026-06-21": {
+    "12627": {
+      "1A": {
+        "available": 4,
+        "status": "AVAILABLE"
+      },
+      "2A": {
+        "available": 8,
+        "status": "AVAILABLE"
+      },
+      "3A": {
+        "available": 0,
+        "status": "WL-45"
+      },
+      "SL": {
+        "available": 20,
+        "status": "AVAILABLE"
+      }
+    },
+    "12628": {
+      "1A": {
+        "available": 1,
+        "status": "AVAILABLE"
+      },
+      "2A": {
+        "available": 0,
+        "status": "RAC-2"
+      },
+      "3A": {
+        "available": 15,
+        "status": "AVAILABLE"
+      },
+      "SL": {
+        "available": 50,
+        "status": "AVAILABLE"
+      }
+    },
+    "12727": {
+      "1A": {
+        "available": 6,
+        "status": "AVAILABLE"
+      },
+      "2A": {
+        "available": 14,
+        "status": "AVAILABLE"
+      },
+      "3A": {
+        "available": 40,
+        "status": "AVAILABLE"
+      },
+      "SL": {
+        "available": 110,
+        "status": "AVAILABLE"
+      }
+    }
+  },
+  "2026-06-25": {
+    "12627": {
+      "1A": {
+        "available": 2,
+        "status": "AVAILABLE"
+      },
+      "2A": {
+        "available": 5,
+        "status": "AVAILABLE"
+      },
+      "3A": {
+        "available": 12,
+        "status": "AVAILABLE"
+      },
+      "SL": {
+        "available": 0,
+        "status": "WL-8"
+      }
+    },
+    "12727": {
+      "1A": {
+        "available": 8,
+        "status": "AVAILABLE"
+      },
+      "2A": {
+        "available": 20,
+        "status": "AVAILABLE"
+      },
+      "3A": {
+        "available": 59,
+        "status": "AVAILABLE"
+      },
+      "SL": {
+        "available": 150,
+        "status": "AVAILABLE"
+      }
+    },
+    "22691": {
+      "1A": {
+        "available": 3,
+        "status": "AVAILABLE"
+      },
+      "2A": {
+        "available": 0,
+        "status": "WL-2"
+      },
+      "3A": {
+        "available": 14,
+        "status": "AVAILABLE"
+      }
+    }
+  },
+  "2026-06-22": {
+    "12627": {
+      "1A": {
+        "available": 9,
+        "status": "AVAILABLE"
+      },
+      "2A": {
+        "available": 15,
+        "status": "AVAILABLE"
+      },
+      "3A": {
+        "available": 50,
+        "status": "AVAILABLE"
+      },
+      "SL": {
+        "available": 102,
+        "status": "AVAILABLE"
+      }
+    }
+  },
+  "2026-06-23": {
+    "12724": {
+      "1A": {
+        "available": 2,
+        "status": "AVAILABLE"
+      },
+      "2A": {
+        "available": 25,
+        "status": "AVAILABLE"
+      },
+      "3A": {
+        "available": 48,
+        "status": "AVAILABLE"
+      },
+      "SL": {
+        "available": 112,
+        "status": "AVAILABLE"
+      }
+    }
+  },
+  "2026-06-24": {
+    "12724": {
+      "1A": {
+        "available": 10,
+        "status": "AVAILABLE"
+      },
+      "2A": {
+        "available": 8,
+        "status": "AVAILABLE"
+      },
+      "3A": {
+        "available": 46,
+        "status": "AVAILABLE"
+      },
+      "SL": {
+        "available": 27,
+        "status": "AVAILABLE"
+      }
+    }
+  }
+}
